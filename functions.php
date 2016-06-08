@@ -64,7 +64,7 @@ function archondigital_setup() {
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside',
+		'status',
 		'image',
 		'video',
 		'quote',
