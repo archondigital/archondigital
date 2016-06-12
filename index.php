@@ -21,9 +21,15 @@ get_header(); ?>
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
+				<br><br>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+					<div class="row">
+						<div class="large-12 columns">
+
+							<h1 class="page-title screen-reader-text text-center"><?php single_post_title(); ?></h1>		
+						</div>
+					</div>
+				</header><br><br>
 
 			<?php
 			endif;

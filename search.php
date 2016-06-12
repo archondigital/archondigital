@@ -11,14 +11,19 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		
+			
+		
 		<?php
 		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'archondigital' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
-
+			<div class="row">
+				<div class="large-6 large-centered columns">
+					<header class="page-header">
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'archondigital' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					</header><!-- .page-header -->
+				</div>
+			</div>
+			
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();

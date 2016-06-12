@@ -9,7 +9,7 @@
 
 ?>
 <div class="row">
-	<div class="large-12 columns">
+	<div class="large-8 large-centered columns format-status-container">
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
@@ -29,6 +29,7 @@
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
+
 				<?php
 					the_content( sprintf(
 						/* translators: %s: Name of current post. */

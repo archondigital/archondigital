@@ -15,21 +15,29 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			get_template_part( 'layout/layout', get_post_format() );
 
 		endwhile; // End of the loop.
 		?>
 
+		<div id="post-nav">
+			<div class="row">
+				<div class="large-12 columns">
+				<?php the_post_navigation(); ?>		
+				</div>	
+			</div>
+			
+		</div>
+		
+
+		<?php // If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
 <?php
-get_sidebar();
 get_footer();

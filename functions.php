@@ -42,6 +42,8 @@ function archondigital_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'featured-thumb', 800, 600, TRUE );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'archondigital' ),
@@ -104,8 +106,8 @@ function archondigital_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'archondigital' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'archondigital_widgets_init' );
@@ -115,6 +117,14 @@ add_action( 'widgets_init', 'archondigital_widgets_init' );
  */
 function archondigital_scripts() {
 	wp_enqueue_style( 'archondigital-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'foundation-jquery', get_template_directory_uri() . '/assets/bower_components/jquery/dist/jquery.js', array(), '20151215', false );	
+
+	wp_enqueue_script( 'foundation-what-input', get_template_directory_uri() . '/assets/bower_components/what-input/what-input.js', array('foundation-jquery'), '20151215', true );	
+	
+	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/bower_components/foundation-sites/dist/foundation.js', array('foundation-jquery'), '20151215', true );	
+
+	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/assets/js/app.js', array('foundation-jquery'), '20151215', true );	
 
 	wp_enqueue_script( 'archondigital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -150,3 +160,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function filter_media_comment_status( $open, $post_id ) {
+	$post = get_post( $post_id );
+	if( $post->post_type == 'attachment' ) {
+		return false;
+	}
+	return $open;
+}
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
