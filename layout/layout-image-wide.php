@@ -11,11 +11,11 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row fullwidth">
-			<div class="large-7 columns text-right" data-magellan>
+			<div class="large-8 columns text-right" data-magellan>
 				<?php the_post_thumbnail( 'full' );  // Other resolutions ?>
 			</div>	
 
-			<div class="large-5 columns">
+			<div class="large-4 columns">
 				<header class="entry-header">
 					<?php
 						if ( is_single() ) {
@@ -50,10 +50,6 @@
 				<footer class="entry-footer">
 					<?php archondigital_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-			</div>
-
-			<div class="large-2 columns">	
-			ads go here
 			</div>
 		</div>
 

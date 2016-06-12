@@ -36,9 +36,9 @@
   while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
     <li class="orbit-slide">
-        <div class="wp-caption">
+        <div>
           <img src="<?php the_field('banner-image'); ?>" alt="Banner image">
-          <figcaption class="wp-caption-text"><?php the_field('banner-caption'); ?></figcaption>
+          <figcaption style="padding:1.25rem;"><?php the_field('banner-caption'); ?></figcaption>
         </div>
     </li>
 
