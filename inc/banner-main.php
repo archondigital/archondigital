@@ -40,8 +40,6 @@
           <img src="<?php the_field('banner-image'); ?>" alt="Banner image">
           <figcaption class="wp-caption-text"><?php the_field('banner-caption'); ?></figcaption>
         </div>
-        
-        
     </li>
 
   <?php endwhile;?>
