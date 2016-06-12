@@ -264,6 +264,12 @@ div.offgrid-left img {
 	margin-right: auto;
 }
 
+div.offgrid-right {
+    float: right;
+    max-width: 41.66667%;
+    padding-left: 1.25rem;
+}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
