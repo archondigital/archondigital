@@ -248,7 +248,7 @@ div.offgrid-left img {
 	margin-left: 1.5em;
 }
 
-.aligncenter {
+.aligncenter, .alignnone {
 	clear: both;
 	display: block;
 	margin-left: auto;
