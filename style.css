@@ -23,6 +23,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import url("../archondigital/assets/css/app.css");
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
 
 body {
     background: #fff;
@@ -324,21 +331,6 @@ div.offgrid-left img {
 	.nav-next {float: right;}
 
 /*--------------------------------------------------------------
-## Footer
---------------------------------------------------------------*/
-.site-footer .site-info {position: relative; width: 100%; background: transparent; padding:1.25rem;}
-  .site-footer .site-info h2, .site-footer .site-info p {font-size: 80%;}
-  .site-footer .site-info h2, .site-footer .site-info p, .site-footer .site-info a {color: #d7d7d7;}
-
-.github-icon-svg, .twitter-icon-svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 3px;
-}
-
-/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -374,3 +366,23 @@ div.offgrid-left img {
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer { display: block; width: 100%;	min-height: 90px; /*position: absolute; bottom: 0;*/ /* '.push' must be the same height as 'footer' */
+}
+
+.site-footer .site-info {position: relative; width: 100%; background: transparent; padding:1.25rem;}
+  .site-footer .site-info h2, .site-footer .site-info p {font-size: 80%;}
+  .site-footer .site-info h2, .site-footer .site-info p, .site-footer .site-info a {color: #d7d7d7;}
+
+.github-icon-svg, .twitter-icon-svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+}
+
+#page.site {min-height: 100%; position: relative; overflow: hidden;}

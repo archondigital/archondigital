@@ -13,14 +13,15 @@
 
 	</div><!-- #content -->
 
+</div><!-- #page -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 		<div class="row fullwidth">
-			<div class="large-6 columns">
+			<div class="large-5 columns">
 			  <p>&copy; 2016 <a href="/">Archon Digital</a>. All rights reserved. | <a href="/feed.xml">RSS</a> / <a href="/sitemap.xml">XML Sitemap</a> | <a href="http://archon.digital/about/privacy/">Privacy Policy</a>.</p>
 			</div>
-			<div class="large-6 columns text-right">
+			<div class="large-7 columns text-right">
 			    <p>Follow @archondigital <a href="https://github.com/archondigital">
 			        <span class="icon github">
 			          <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -61,8 +62,6 @@
 	<?php get_template_part( 'inc/modal', 'partners' );	?>
 
 </footer><!-- #colophon -->
-
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
