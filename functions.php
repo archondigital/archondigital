@@ -169,3 +169,16 @@ function filter_media_comment_status( $open, $post_id ) {
 	return $open;
 }
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
+
+// insert default title for post format status
+add_filter( 'wp_insert_post_data' , 'modify_post_title' , '99', 2 );
+
+function modify_post_title( $data , $postarr ) {
+
+if( has_post_format('status')) {
+   if ($data['post_type'] == 'post') {
+    $data['post_title'] = 'Status update | ' . date('j F Y');
+  }
+}
+  return $data;
+}
