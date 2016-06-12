@@ -12,7 +12,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
 			<div class="large-6 columns">
-				<?php the_post_thumbnail( 'featured-thumb-article' );  // Other resolutions ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'featured-thumb-article' );  // Other resolutions ?></a>
 			</div>	
 
 			<div class="large-6 columns">
