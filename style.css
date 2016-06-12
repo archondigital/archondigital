@@ -179,6 +179,11 @@ p {
     background-color: rgba(10, 10, 10, 0.85);
 }
 
+#banner-main {width: 100%; height: 90%;}
+	#banner-main .orbit {height: 100%;}
+	#banner-main .orbit .orbit-container {height: 100%;}
+	#banner-main .orbit .orbit-container .orbit-slide {height: 100%; overflow: hidden;}
+
 article.format-standard {padding: 3rem 0 1.25rem 0;}
 
 article.format-image {padding: 3rem 0 1.25rem 0;}
