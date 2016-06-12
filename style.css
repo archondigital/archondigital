@@ -44,6 +44,12 @@ body {
     position: relative;
 }
 
+.row {
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 0px 0px 10px rgba(0,0,0,0.10);
 }
@@ -267,6 +273,7 @@ div.offgrid-left img {
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
+	.alignleft.wp-caption .wp-caption-text {padding-left: 24.2%;}
 
 .wp-caption-text {
 	text-align: left;
