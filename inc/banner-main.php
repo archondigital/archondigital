@@ -26,7 +26,7 @@
 <div id="banner-small" class="show-for-small-only">
 
   <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <ul class="orbit-container">
+    <ul class="orbit-container" style="overflow:visible;">
       <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
       <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
@@ -36,9 +36,9 @@
   while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
     <li class="orbit-slide">
-        <div>
+        <div class="wp-caption">
           <img src="<?php the_field('banner-image'); ?>" alt="Banner image">
-          <figcaption><?php the_field('banner-caption'); ?></figcaption>
+          <figcaption class="wp-caption-text"><?php the_field('banner-caption'); ?></figcaption>
         </div>
         
         
