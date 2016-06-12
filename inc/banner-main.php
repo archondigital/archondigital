@@ -11,7 +11,7 @@
   while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
     <li class="orbit-slide">
-        <img class="orbit-image" src="<?php the_field('banner-image'); ?>" alt="<?php the_field('banner-caption'); ?>">
+        <img class="orbit-image" src="<?php the_field('banner-image'); ?>" alt="Banner image">
         <figcaption class="orbit-caption"><?php the_field('banner-caption'); ?></figcaption>
     </li>
 
@@ -37,7 +37,7 @@
 
     <li class="orbit-slide">
         <div>
-          <img src="<?php the_field('banner-image'); ?>" alt="<?php the_field('banner-caption'); ?>">
+          <img src="<?php the_field('banner-image'); ?>" alt="Banner image">
           <figcaption><?php the_field('banner-caption'); ?></figcaption>
         </div>
         
