@@ -8,46 +8,49 @@
  */
 
 ?>
-<div class="row">
-	<div class="large-12 columns">
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
-				<?php
-					if ( is_single() ) {
-						the_title( '<h1 class="entry-title">', '</h1>' );
-					} else {
-						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-					}
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="row">
+			<div class="large-6 columns">
+				<?php the_post_thumbnail( 'featured-thumb-article' );  // Other resolutions ?>
+			</div>	
 
-				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php archondigital_posted_on(); ?>
-				</div><!-- .entry-meta -->
-				<?php
-				endif; ?>
-			</header><!-- .entry-header -->
+			<div class="large-6 columns">
+				<header class="entry-header">
+					<?php
+						if ( is_single() ) {
+							the_title( '<h1 class="entry-title">', '</h1>' );
+						} else {
+							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						}
 
-			<div class="entry-content">
-				<?php
-					the_content( sprintf(
-						/* translators: %s: Name of current post. */
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'archondigital' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
+					if ( 'post' === get_post_type() ) : ?>
+					<div class="entry-meta">
+						<?php archondigital_posted_on(); ?>
+					</div><!-- .entry-meta -->
+					<?php
+					endif; ?>
+				</header><!-- .entry-header -->
 
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'archondigital' ),
-						'after'  => '</div>',
-					) );
-				?>
-			</div><!-- .entry-content -->
+				<div class="entry-content">
+					<?php
+						the_excerpt( sprintf(
+							/* translators: %s: Name of current post. */
+							wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'archondigital' ), array( 'span' => array( 'class' => array() ) ) ),
+							the_title( '<span class="screen-reader-text">"', '"</span>', false )
+						) );
 
-			<footer class="entry-footer">
-				<?php archondigital_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
-		</article><!-- #post-## -->
-		
-	</div>	
-</div>
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'archondigital' ),
+							'after'  => '</div>',
+						) );
+					?>
+				</div><!-- .entry-content -->
 
+				<footer class="entry-footer">
+					<?php archondigital_entry_footer(); ?>
+				</footer><!-- .entry-footer -->
+			</div>	
+		</div>
+
+	</article><!-- #post-## -->

@@ -43,6 +43,7 @@ function archondigital_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'featured-thumb', 800, 600, TRUE );
+	add_image_size( 'featured-thumb-article', 800, 400, TRUE );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
