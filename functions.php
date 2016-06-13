@@ -125,8 +125,10 @@ function archondigital_scripts() {
 	
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/bower_components/foundation-sites/dist/foundation.js', array('foundation-jquery'), '20151215', true );	
 
-	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/assets/js/app.js', array('foundation-jquery'), '20151215', true );	
+	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/assets/js/app.js', array('foundation-jquery'), '20151215', true );
 
+	wp_enqueue_script( 'foundation-stellar', get_template_directory_uri() . '/assets/js/vendor/jquery.stellar.min.js', array('foundation-jquery'), '20151215', true );
+	
 	wp_enqueue_script( 'archondigital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'archondigital-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
