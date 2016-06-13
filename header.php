@@ -20,6 +20,17 @@
 <meta property="fb:app_id" content="138528675742" />
 
 <?php wp_head(); ?>
+
+<!-- Custom CSS -->
+<?php
+global $wp_query;
+$postid = $wp_query->post->ID;
+echo '<style type="text/css">';
+echo get_post_meta($postid, 'custom_css', true);
+echo '</style>';
+
+wp_reset_query();
+?>
 </head>
 
 <body <?php body_class(); ?>>
