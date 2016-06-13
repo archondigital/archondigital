@@ -10,12 +10,12 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="row fullwidth">
-			<div class="large-4 columns text-right" data-magellan>
+		<div class="row">
+			<div class="large-6 columns text-right" data-magellan>
 				<?php the_post_thumbnail( 'large' );  // Other resolutions ?>
 			</div>	
 
-			<div class="large-5 columns">
+			<div class="large-6 columns">
 				<header class="entry-header">
 					<?php
 						if ( is_single() ) {
@@ -52,9 +52,6 @@
 				</footer><!-- .entry-footer -->
 			</div>
 
-			<div class="large-2 columns">	
-			ads go here
-			</div>
 		</div>
 
 	</article><!-- #post-## -->
