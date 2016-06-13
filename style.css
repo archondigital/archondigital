@@ -184,8 +184,8 @@ p {
 	#banner-main .orbit ul.orbit-container ul {}
 	#banner-main .orbit ul.orbit-container li.orbit-slide {}
 	#banner-main .orbit ul.orbit-container li.orbit-slide img {}
-	#banner-main .orbit ul.orbit-container li.orbit-slide a { color: #fff;
-    text-decoration: underline;}
+	/*#banner-main .orbit ul.orbit-container li.orbit-slide a { color: #fff;
+    text-decoration: underline;}*/
 
 article.format-standard {padding: 3rem 0 1.25rem 0;}
 
