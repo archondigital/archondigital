@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 		<h3>Discussion</h3>
 
 		<div class="callout alert" data-closable>
-		  <p style="font-size:80%;">I am moving my commenting to Facebook but will be keeping my Disqus below. <br>Feel free to comment on any of these platforms.</p>
+		  <p style="font-size:80%;">I am moving my commenting to Facebook but will be keeping my Disqus below for a little longer. <br>Feel free to comment on any of these platforms.</p>
 		  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
 		    <span aria-hidden="true">&times;</span>
 		  </button>
