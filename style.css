@@ -412,3 +412,11 @@ div.offgrid-right {
 }
 
 #page.site {min-height: 90%; position: relative; overflow: hidden;}
+
+/* custom media queries */
+@media only screen and (max-width: 40em)
+div.offgrid-left, div.offgrid-right {
+    float: none;
+    max-width: 120%;
+    padding-right: 0;
+}
