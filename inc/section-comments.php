@@ -23,6 +23,14 @@ if ( post_password_required() ) {
 
 <div class="row">
 	<div class="large-8 columns">
+		<h3>Discussion</h3>
+
+		<div class="callout alert" data-closable>
+		  <p style="font-size:80%;">I am moving my commenting to Facebook but will be keeping my Disqus below. <br>Feel free to comment on any of these platforms.</p>
+		  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
 
 		<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="10"></div>
 
