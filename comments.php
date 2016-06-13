@@ -20,10 +20,10 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
-	<div class="row">
-		<div class="large-8 columns">
-		
+
+<div class="row">
+	<div class="large-8 columns">
+		<div id="comments" class="comments-area">		
 		<?php
 			// You can start editing here -- including this comment!
 			if ( have_comments() ) : ?>
@@ -83,14 +83,14 @@ if ( post_password_required() ) {
 
 			comment_form();
 			?>
-
-		</div>
-
+		</div><!-- #comments -->
 		<div class="large-4 columns">
 			<?php get_sidebar(); ?>
 		</div>
-	</div>
+
+	</div>		
+</div>
 
 	
 
-</div><!-- #comments -->
+
