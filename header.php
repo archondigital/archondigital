@@ -17,6 +17,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<meta property="fb:app_id" content="138528675742" />
+
 <?php wp_head(); ?>
 </head>
 
@@ -33,6 +35,16 @@
   ga('send', 'pageview');
 
 </script>
+
+<!-- FB SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=188705484530437";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text hide" href="#main"><?php esc_html_e( 'Skip to content', 'archondigital' ); ?></a>
