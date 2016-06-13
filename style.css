@@ -23,6 +23,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import url("../archondigital/assets/css/app.css");
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+@import url("../archondigital/assets/js/vendor/font-awesome/css/font-awesome.min.css");
+
 * {
 	margin: 0;
 }
@@ -75,6 +78,8 @@ p {
 }
 
 .fullwidth {max-width: 100%;}
+
+.fullscreen {position: relative; min-height: 900px; height: 100%; width: 100%;}
 
 .title-bar {
     background: #fff;
@@ -179,7 +184,7 @@ p {
     background-color: rgba(10, 10, 10, 0.85);
 }
 
-#banner-main {width: 100%; height: 90%;}
+#banner-main {width: 100%; height: 90%; margin-bottom: 2.25rem;}
 	#banner-main .orbit {height: 100%;}
 	#banner-main .orbit ul.orbit-container ul {}
 	#banner-main .orbit ul.orbit-container li.orbit-slide {}
@@ -187,12 +192,30 @@ p {
 	/*#banner-main .orbit ul.orbit-container li.orbit-slide a { color: #fff;
     text-decoration: underline;}*/
 
+.arrow-down {margin: 1.25rem 0 1.5rem 0; color: #666;}
+
+/* About */
+#about, #blog {display: block; padding-top: 160px; margin: 0; position: relative;}
+  
+  
+  #about h1, #projects h1, #blog h1 {}
+  #about h1 {position: absolute; bottom: 0; font-size: 6em; opacity: 0.1;}
+  #about h1, #about h2, #about p {color: #fff; text-shadow: 0px 0px 10px rgba(0,0,0,0.40);}
+
+  #about {
+    background-image: url(/wp-content/uploads/bnr-slide-neb-grayscale.jpg);
+    background-repeat: no-repeat; background-position: fixed;
+    background-size: cover;
+  }
+  .about .callout {position: absolute; bottom: 120px; width: 100%; background: rgba(0,0,0,0.5); border: none;}
+
 article.format-standard {padding: 3rem 0 1.25rem 0;}
 
 article.format-image {padding: 3rem 0 1.25rem 0;}
 
-.format-status {padding: 1.25rem; margin: 2.5rem 0; background: rgba(245, 245, 245, 0.55);}
-	.format-status p {font-size: 1.51875rem;line-height: 1.3;}
+article.format-status {padding: 1.25rem; margin: 2.5rem 0; background: rgba(245, 245, 245, 0.55);}
+	article.format-status p {font-size: 1.51875rem;line-height: 1.3;}
+    article.format-status header.entry-header {padding: 0;}
 
 	div.format-status-container {padding: 4rem 0;}
 
@@ -418,6 +441,7 @@ div.offgrid-right {
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { 
+	.home div#about { padding: 3rem 0; }
   /*h1 {font-size: 1.625rem;}
   p.lead {font-size: 1.25rem; line-height: 1.4}*/
 
@@ -432,30 +456,32 @@ div.offgrid-right {
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {  
-
+	.home div#about { padding: 9rem 0; }
   } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.home div#about { padding: 9rem 0; }
+ } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
-  
+  	.home div#about { padding: 9rem 0; }
  } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  
+  .home div#about { padding: 9rem 0; }
  } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
 @media only screen and (min-width: 90.063em) { 
-
+	.home div#about { padding: 9rem 0; }
   } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { 
- 
+ .home div#about { padding: 9rem 0; }
   } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 // XXLarge screens
 @media only screen and (min-width: 120.063em) {
-
+	.home div#about { padding: 9rem 0; }
  } /* min-width 1921px, xxlarge screens */

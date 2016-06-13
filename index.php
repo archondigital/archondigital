@@ -25,8 +25,8 @@ get_header(); ?>
 				<header>
 					<div class="row">
 						<div class="large-12 columns">
-
-							<h1 class="page-title screen-reader-text text-center"><?php single_post_title(); ?></h1>		
+							<h1 class="page-title text-center"><?php single_post_title(); ?></h1>		
+							<p class="lead text-center"><em>A repository of thoughts, my consciousness in digital form.</em></p>
 						</div>
 					</div>
 				</header><br><br>
@@ -44,11 +44,18 @@ get_header(); ?>
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
 
-			endwhile;
+			endwhile; ?>
 
-			the_posts_navigation();
+			<div id="post-nav">
+				<div class="row">
+					<div class="large-12 columns">
+					<?php the_posts_navigation(); ?>
+					</div>	
+				</div>				
+			</div>
 
-		else :
+
+		<?php else :
 
 			get_template_part( 'template-parts/content', 'none' );
 

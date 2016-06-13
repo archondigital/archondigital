@@ -10,13 +10,29 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="row">
-		<div class="large-12 columns">
-			<header class="entry-header">
-				<?php the_title( '<h1 class="entry-title text-center"><small>', '</small></h1>' ); ?>
-			</header><!-- .entry-header -->
-		</div>
+	
+	<?php if(has_post_thumbnail()) :?>
+	<div style="background-image: url(<?php the_post_thumbnail_url(); ?>); padding: 24rem 0 0 0; background-size:cover; background-position:center center; margin-bottom:2.25rem;" data-stellar-background-ratio="0.3">
+		<div class="row fullwidth" style="background: rgba(0,0,0,0.5);">
+			<div class="large-12 columns">
+				<header class="entry-header" style="padding:2.25rem 0 0 0;">
+					<?php the_title( '<h1 class="entry-title text-center" style="color:#fff;">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
+			</div>
+		</div>	
 	</div>
+
+	<?php else :?>
+	<div>
+		<div class="row fullwidth">
+			<div class="large-12 columns">
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
+			</div>
+		</div>	
+	</div>
+	<?php endif;?>
 			
 	<div class="row">
 		<div class="large-8 large-centered columns">
