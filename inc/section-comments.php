@@ -25,8 +25,8 @@ if ( post_password_required() ) {
 	<div class="large-8 columns">
 		<h3>Discussion</h3>
 
-		<div class="callout alert" data-closable>
-		  <p style="font-size:80%;">I am moving my commenting to Facebook Comments plugin but will be keeping my Disqus below for a little longer. <br>Feel free to comment on any of these commenting platforms.</p>
+		<div class="callout primary" data-closable>
+		  <p style="font-size:80%;">I just started using Facebook Comments plugin as my main commenting tool. <br>Feel free to start up a conversation.</p>
 		  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
 		    <span aria-hidden="true">&times;</span>
 		  </button>
@@ -38,6 +38,14 @@ if ( post_password_required() ) {
 
 		<?php global $wp_query; $postid = $wp_query->post->ID; wp_reset_query(); ?>
 		<?php $key = 'enable_disqus'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') { ?>
+		    
+			<div class="callout warning" data-closable>
+			  <p style="font-size:80%;">Disqus has been deprecated on this site. I am only keeping it on posts where there have been enough comments. Sadly, if some posts are missing comments, I will no longer attempt to recover these. I'm done with Disqus for now.</p>
+			  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>    
+
 		    <div id="disqus_thread"></div>
 			<script>
 			    /**
