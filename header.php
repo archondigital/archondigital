@@ -21,16 +21,17 @@
 
 <?php wp_head(); ?>
 
-<!-- Custom CSS -->
-<?php
-global $wp_query;
-$postid = $wp_query->post->ID;
-echo '<style type="text/css">';
-echo get_post_meta($postid, 'custom_css', true);
-echo '</style>';
 
-wp_reset_query();
-?>
+<?php global $wp_query; $postid = $wp_query->post->ID; wp_reset_query(); ?>
+<?php $key = 'custom-layout'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') { ?>
+    <?php $key="custom-css"; echo get_post_meta($post->ID, $key, true); ?>
+<?php } else { ?>
+    <style type="text/css">
+    <?php the_field('custom_css'); ?>
+    </style>
+<?php } ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>
