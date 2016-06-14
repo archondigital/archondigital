@@ -22,7 +22,7 @@ if ( post_password_required() ) {
 
 
 <div class="row">
-	<div class="large-8 columns">
+	<div id="comments" class="large-8 columns">
 		<h3>Discussion</h3>
 
 		<div class="callout primary" data-closable>
