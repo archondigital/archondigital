@@ -36,9 +36,8 @@ if ( post_password_required() ) {
 
 		<hr>
 
-		<?php global $wp_query; $postid = $wp_query->post->ID; wp_reset_query(); ?>
-		<?php $key = 'enable_disqus'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') { ?>
-		    
+			<?php if ( 'true' == get_field('enable_disqus') ): ?>
+    
 			<div class="callout warning" data-closable>
 			  <p style="font-size:80%;">Disqus has been deprecated on this site. I am only keeping it on posts where there have been enough comments. <br>Sadly, if some posts are missing comments, I will no longer attempt to recover these. I'm done with Disqus for now.</p>
 			  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
@@ -70,12 +69,12 @@ if ( post_password_required() ) {
 			    })();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>	
+    
+			<?php else: ?>
+    
+			<?php endif; ?>		    
 
-		<?php } else { ?>
-			
-		<?php } ?>		
 
-		
 
 		<?php // If comments are open or we have at least one comment, load up the comment template.
 			//if ( comments_open() || get_comments_number() ) :
