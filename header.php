@@ -23,14 +23,11 @@
 
 
 <?php global $wp_query; $postid = $wp_query->post->ID; wp_reset_query(); ?>
-<?php $key = 'custom-layout'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') { ?>
-    <?php $key="custom-css"; echo get_post_meta($post->ID, $key, true); ?>
-<?php } else { ?>
+<?php if ( 'true' == get_field('custom_layout') ): ?>
     <style type="text/css">
     <?php the_field('custom_css'); ?>
     </style>
-<?php } ?>
-
+<?php endif; wp_reset_query(); ?>
 
 </head>
 
