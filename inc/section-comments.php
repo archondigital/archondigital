@@ -40,7 +40,7 @@ if ( post_password_required() ) {
 		<?php $key = 'enable_disqus'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') { ?>
 		    
 			<div class="callout warning" data-closable>
-			  <p style="font-size:80%;">Disqus has been deprecated on this site. I am only keeping it on posts where there have been enough comments. Sadly, if some posts are missing comments, I will no longer attempt to recover these. I'm done with Disqus for now.</p>
+			  <p style="font-size:80%;">Disqus has been deprecated on this site. I am only keeping it on posts where there have been enough comments. <br>Sadly, if some posts are missing comments, I will no longer attempt to recover these. I'm done with Disqus for now.</p>
 			  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
 			    <span aria-hidden="true">&times;</span>
 			  </button>
