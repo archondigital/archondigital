@@ -84,6 +84,17 @@ if ( post_password_required() ) {
 	</div>
 		
 	<div class="large-4 columns">
+		<?php 
+
+		if ( function_exists( 'sharing_display' ) ) {
+		    sharing_display( '', true );
+		}
+		 
+		if ( class_exists( 'Jetpack_Likes' ) ) {
+		    $custom_likes = new Jetpack_Likes;
+		    echo $custom_likes->post_likes( '' );
+		}
+		?>
 		<?php get_sidebar(); ?>
 	</div>
 </div>
