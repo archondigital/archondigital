@@ -212,8 +212,8 @@ p {
 article.format-standard {padding: 3rem 0 1.25rem 0;}
 
 article.format-image {padding: 3rem 0 1.25rem 0;}
-    article.format-image.tall img.size-full {width: 100%;}
-    article.format-image.wide img.size-large {width: 100%;}
+    article.format-image.tall img.size-large {width: 100%;}
+    article.format-image.wide img.size-full {width: 100%;}
 
 article.format-status {padding: 1.25rem; margin: 2.5rem 0; background: rgba(245, 245, 245, 0.55);}
 	article.format-status p {font-size: 1.51875rem;line-height: 1.3;}
