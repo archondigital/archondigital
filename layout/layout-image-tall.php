@@ -9,7 +9,7 @@
 
 ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('tall'); ?>>
 		<div class="row">
 			<div class="large-6 columns text-right" data-magellan>
 				<?php the_post_thumbnail( 'large' );  // Other resolutions ?>
