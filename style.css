@@ -445,6 +445,9 @@ iframe,
 object {
     max-width: 100% !important;
 }
+iframe.wp-embedded-content {
+    max-width: 100% !important;
+}
 
 /*--------------------------------------------------------------
 ## Footer
