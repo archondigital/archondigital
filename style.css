@@ -443,7 +443,7 @@ div.offgrid-right {
 embed,
 iframe,
 object {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 /*--------------------------------------------------------------
