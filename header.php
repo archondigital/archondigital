@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <meta property="fb:app_id" content="138528675742" />
+<meta property="fb:pages" content="250984095360" />
 
 <?php wp_head(); ?>
 
