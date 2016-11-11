@@ -225,7 +225,7 @@ article.format-status {padding: 1.25rem; margin: 2.5rem 0; background: rgba(245,
 
 img.size-featured-thumb-article, img.size-featured-thumb {border:1px #ececec solid; }
 
-.entry-header {}
+.entry-header {padding-bottom: 2rem;}
     .single.single-format-standard .entry-header { padding: 6rem 0 2rem 0; }
 
 .entry-title {padding: 0; letter-spacing: -0.05rem; line-height: 2.2rem; color: #333;}
