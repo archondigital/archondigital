@@ -225,7 +225,7 @@ article.format-status {padding: 1.25rem; margin: 2.5rem 0; background: rgba(245,
 
 img.size-featured-thumb-article, img.size-featured-thumb {border:1px #ececec solid; }
 
-.entry-title {padding: 0;}
+.entry-title {padding: 0; letter-spacing: -0.05rem; line-height: 2.2rem; color: #333;}
     .single.single-format-image .entry-title {padding: 0; color: #333;font-weight: 900; margin-bottom: 1.25rem;}
 
 .entry-title a {color: #000;}
