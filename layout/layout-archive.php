@@ -11,7 +11,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row fullwidth">
 		<div class="large-12 columns">
-			<div class="banner-tag-cloud>
+			<div class="banner-tag-cloud">
 				<?php wp_tag_cloud( 'number=0&smallest=22&largest=90&orderby=RAND' ); ?>	
 			</div>
 		</div>
