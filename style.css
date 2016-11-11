@@ -228,6 +228,8 @@ img.size-featured-thumb-article, img.size-featured-thumb {border:1px #ececec sol
 .entry-title {padding: 0; letter-spacing: -0.05rem; line-height: 2.2rem; color: #333;}
     .single.single-format-image .entry-title {padding: 0; color: #333;font-weight: 900; margin-bottom: 1.25rem;}
 
+    .single.single-format-standard .entry-title {letter-spacing: -0.05rem; line-height: 3.2rem; color: #333; font-size: 3.5rem;}
+
 .entry-title a {color: #000;}
 	.entry-title a:hover {color: #c93b16;}
 
