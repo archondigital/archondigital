@@ -58,10 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
     font-weight: bold;
     font-style: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-rendering: optimizeLegibility;
     line-height: 1.2;
 }
@@ -227,6 +227,16 @@ img.size-featured-thumb-article, img.size-featured-thumb {border:1px #ececec sol
 
 .entry-title {
 	padding: 0;
+}
+
+    .single-format-image .entry-title {
+    padding: 0;
+    font-size: 6rem;
+    line-height: 5rem;
+    color: #333;
+    letter-spacing: -0.3rem;
+    font-weight: 900;
+    margin-bottom: 1.25rem;
 }
 
 .entry-title a {color: #000;}
