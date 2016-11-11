@@ -12,7 +12,7 @@ get_header(); ?>
 
 				<?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
 
-				<?php wp_tag_cloud( 'smallest=22&largest=90' ); ?>
+				<?php wp_tag_cloud( 'number=0&smallest=22&largest=90&orderby=RAND' ); ?>
 
 				<?php endif; ?>
 

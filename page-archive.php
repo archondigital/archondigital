@@ -6,6 +6,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div>
+				<?php wp_tag_cloud( 'number=0&smallest=22&largest=90&orderby=RAND' ); ?>
+			</div>
 
 			<?php
 			while ( have_posts() ) : the_post();
