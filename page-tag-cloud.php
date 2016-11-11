@@ -12,10 +12,7 @@ get_header(); ?>
 
 				<?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
 
-				<h2>Popular Tags</h2>
-				<ul>
-					<li><?php wp_tag_cloud( 'smallest=8&largest=22' ); ?></li>
-				</ul>
+				<?php wp_tag_cloud( 'smallest=22&largest=90' ); ?>
 
 				<?php endif; ?>
 
