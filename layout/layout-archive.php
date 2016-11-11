@@ -10,8 +10,12 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header banner-tag-cloud">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<?php wp_tag_cloud( 'number=0&smallest=22&largest=90' ); ?>	
+		<div class="row">
+			<div class="large-12 columns">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+		</div>
+		<?php wp_tag_cloud( 'number=0&smallest=22&largest=90' ); ?>				
 	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
