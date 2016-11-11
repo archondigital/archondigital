@@ -9,21 +9,10 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="row fullwidth">
-		<div class="large-12 columns">
-			<div class="banner-tag-cloud">
-				<?php wp_tag_cloud( 'number=0&smallest=22&largest=90' ); ?>	
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-12 columns">
-			<header class="entry-header">
-				<?php the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
-			</header><!-- .entry-header -->
-		</div>
-	</div>
+	<header class="entry-header banner-tag-cloud">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php wp_tag_cloud( 'number=0&smallest=22&largest=90' ); ?>	
+	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
 		<div class="row">
