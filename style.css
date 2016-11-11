@@ -229,7 +229,7 @@ img.size-featured-thumb-article, img.size-featured-thumb {border:1px #ececec sol
 	padding: 0;
 }
 
-    .single.single-format-image .entry-title {}
+    .single.single-format-image .entry-title {padding: 0; color: #333;font-weight: 900; margin-bottom: 1.25rem;}
 
 .entry-title a {color: #000;}
 	.entry-title a:hover {color: #c93b16;}
