@@ -30,6 +30,16 @@
     </style>
 <?php endif; wp_reset_query(); ?>
 
+<!-- adsense page-level ads -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4990847170766317",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- adsense page-level ads end -->
+
 </head>
 
 <body <?php body_class(); ?>>
