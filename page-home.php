@@ -19,7 +19,7 @@ get_header(); ?>
 				</div>
 
 				<div class="large-4 columns">
-					<?php get_template_part( 'inc/ads', 'buysellads01' ); ?>
+					<?php get_template_part( 'inc/ads', 'buysellads02' ); ?>
 				</div>
 				
 			</div>
