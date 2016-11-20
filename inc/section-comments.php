@@ -24,9 +24,9 @@ if ( post_password_required() ) {
 <div class="row">
 	<div id="comments" class="large-8 columns">
 		<h3>Discussion</h3>
-
-		<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>
-		
+		<div class="flex-video widescreen">
+			<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>	
+		</div>
 		<!-- <div class="callout primary" data-closable>
 		  <p style="font-size:80%;">I just started using Facebook Comments plugin as my main commenting tool. <br>Feel free to start up a conversation.</p>
 		  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
