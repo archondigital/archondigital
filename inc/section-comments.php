@@ -27,12 +27,12 @@ if ( post_password_required() ) {
 
 		<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>
 		
-		<div class="callout primary" data-closable>
+		<!-- <div class="callout primary" data-closable>
 		  <p style="font-size:80%;">I just started using Facebook Comments plugin as my main commenting tool. <br>Feel free to start up a conversation.</p>
 		  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
 		    <span aria-hidden="true">&times;</span>
 		  </button>
-		</div>
+		</div> -->
 
 		<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="10"></div>
 
