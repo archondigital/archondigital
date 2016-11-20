@@ -9,7 +9,20 @@ get_header(); ?>
 
 			<?php get_template_part( 'inc/banner', 'main' ); ?>
 
-			<div class="fullwidth text-center"><a href="#about"><i class="fa fa-chevron-down fa-4x arrow-down" aria-hidden="true"></i></a></div>
+			<div class="row fullwidth">
+				<div class="large-4 columns">
+					&nbsp;
+				</div>
+
+				<div class="large-4 columns text-center">
+					<a href="#about"><i class="fa fa-chevron-down fa-4x arrow-down" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="large-4 columns">
+					<?php get_template_part( 'inc/ads', 'buysellads01' ); ?>
+				</div>
+				
+			</div>
 
 			<div id="about" class="about fullscreen" data-stellar-background-ratio="0.3">
 				
@@ -46,7 +59,7 @@ get_header(); ?>
 				</div>
 
 				<div class="large-4 columns">
-					<?php get_template_part( 'inc/ads', 'buysellads01' ); ?>
+					&nbsp; <?php // get_template_part( 'inc/ads', 'buysellads01' ); ?>
 				</div>
 				
 			</div>
