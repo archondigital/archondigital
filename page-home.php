@@ -10,15 +10,15 @@ get_header(); ?>
 			<?php get_template_part( 'inc/banner', 'main' ); ?>
 
 			<div class="row fullwidth">
-				<div class="large-4 columns">
+				<div class="large-5 columns">
 					&nbsp;
 				</div>
 
-				<div class="large-4 columns text-center">
+				<div class="large-2 columns text-center">
 					<a href="#about"><i class="fa fa-chevron-down fa-4x arrow-down" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="large-4 columns">
+				<div class="large-5 columns text-right">
 					<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>
 				</div>
 				
