@@ -95,8 +95,12 @@ if ( post_password_required() ) {
 		    echo $custom_likes->post_likes( '' );
 		}
 		?>
+
+		<hr>
+		
 		<?php get_template_part( 'inc/ads', 'buysellads01' ); ?>
-		<br><br>
+		
+		<hr>
 
 		<?php get_template_part( 'inc/ads', 'adsense01' ); ?>
 
