@@ -32,6 +32,8 @@
 					endif; ?>
 				</header><!-- .entry-header -->
 
+				<?php get_template_part( 'inc/ads', 'adsense03' ); ?>
+
 				<div class="entry-content">
 					<?php
 						the_content( sprintf(
