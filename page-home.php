@@ -11,7 +11,7 @@ get_header(); ?>
 
 			<div class="row fullwidth">
 				<div class="large-4 columns">
-					<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>
+					&nbsp;
 				</div>
 
 				<div class="large-4 columns text-center">
@@ -19,7 +19,7 @@ get_header(); ?>
 				</div>
 
 				<div class="large-4 columns">
-					<?php get_template_part( 'inc/ads', 'buysellads02' ); ?>
+					<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>
 				</div>
 				
 			</div>
