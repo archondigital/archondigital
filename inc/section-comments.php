@@ -24,7 +24,7 @@ if ( post_password_required() ) {
 <div class="row">
 	<div id="comments" class="large-8 columns">
 		<h3>Discussion</h3>
-		<div class="flex-video text-center">
+		<div class="text-center">
 			<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>	
 		</div>
 		<!-- <div class="callout primary" data-closable>
