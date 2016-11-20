@@ -36,7 +36,20 @@ get_header(); ?>
 				</div>
 			</div>	
 
-			<div class="fullwidth text-center"><a href="#blog"><i class="fa fa-chevron-down fa-4x arrow-down" aria-hidden="true"></i></a></div>
+			<div class="row fullwidth">
+				<div class="large-4 columns">
+					&nbsp;
+				</div>
+
+				<div class="large-4 columns text-center">
+					<a href="#blog"><i class="fa fa-chevron-down fa-4x arrow-down" aria-hidden="true"></i></a>	
+				</div>
+
+				<div class="large-4 columns">
+					<?php get_template_part( 'inc/ads', 'buysellads01' ); ?>
+				</div>
+				
+			</div>
 
 			<div id="blog">
 				<div class="row">
