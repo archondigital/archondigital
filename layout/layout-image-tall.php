@@ -10,12 +10,12 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('tall'); ?>>
-		<div class="row">
-			<div class="large-6 columns text-right" data-magellan>
+		<div class="row fullwidth">
+			<div class="large-6 large-offset-2 columns text-right" data-magellan>
 				<?php the_post_thumbnail( 'large' );  // Other resolutions ?>
 			</div>	
 
-			<div class="large-6 columns">
+			<div class="large-4 columns">
 				<header class="entry-header">
 					<?php
 						if ( is_single() ) {
