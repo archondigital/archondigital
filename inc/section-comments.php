@@ -21,8 +21,8 @@ if ( post_password_required() ) {
 ?>
 
 
-<div class="row">
-	<div id="comments" class="large-8 columns">
+<div class="row expanded">
+	<div id="comments" class="large-6 large-offset-2 columns">
 		<h3>Discussion</h3>
 			<div>
 				<?php get_template_part( 'inc/ads', 'adsense02-leaderboard' ); ?>	
@@ -85,7 +85,7 @@ if ( post_password_required() ) {
 
 	</div>
 		
-	<div class="large-4 columns">
+	<div class="large-3 columns end">
 		<?php 
 
 		if ( function_exists( 'sharing_display' ) ) {
