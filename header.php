@@ -20,6 +20,8 @@
 <meta property="fb:app_id" content="138528675742" />
 <meta property="fb:pages" content="250984095360" />
 
+<meta name="msvalidate.01" content="8A193F8F338F495942F494ECCB9F7692" />
+
 <?php wp_head(); ?>
 
 
