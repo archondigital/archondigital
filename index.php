@@ -26,7 +26,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="large-12 columns">
 							<h1 class="page-title text-center"><?php single_post_title(); ?></h1>		
-							<p class="lead text-center"><em>A repository of thoughts, my consciousness in digital form.</em></p>
+							<p class="lead text-center"><em>A repository of my thoughts, what I capture around me, my consciousness in digital form.</em></p>
 						</div>
 					</div>
 				</header><br><br>
