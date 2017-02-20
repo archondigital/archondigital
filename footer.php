@@ -19,7 +19,7 @@
 	<div class="site-info">
 		<div class="row fullwidth">
 			<div class="large-5 columns">
-			  <p>&copy; 2016 <a href="/">Archon Digital</a>. All rights reserved. | <a href="/feed.xml">RSS</a> / <a href="/sitemap.xml">XML Sitemap</a> | <a href="http://archon.digital/about/privacy/">Privacy Policy</a>.</p>
+			  <p>&copy; 2016 <a href="/">Archon Digital</a>. All rights reserved. | <a href="http://archondigital.com/feed/">RSS</a> / <a href="http://archondigital.com/sitemap_index.xml">XML Sitemap</a> | <a href="http://archon.digital/about/privacy/">Privacy Policy</a>.</p>
 			</div>
 			<div class="large-7 columns text-right">
 			    <p>Follow @archondigital <a href="https://github.com/archondigital">
