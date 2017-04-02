@@ -12,7 +12,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class('wide'); ?>>
 		<div class="row fullwidth">
 			<div class="large-8 columns text-right" data-magellan>
-				<?php the_post_thumbnail( 'full' );  // Other resolutions ?>
+				<?php the_post_thumbnail( 'full', array( 'alt' => 'the_title' ) );  // Other resolutions ?>
 			</div>	
 
 			<div class="large-4 columns">
